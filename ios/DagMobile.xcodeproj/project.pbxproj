@@ -38,6 +38,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* DagMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DagMobileTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8758D4272242E01700C24C6F /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8758D4262242E00D00C24C6F /* libRNGestureHandler.a */; };
 		87E1CDC022429F0400D810B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87E1CDBF22429F0400D810B1 /* GoogleService-Info.plist */; };
 		8C74128CF5B7063CE70C0848 /* libPods-DagMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A10372D6360FCC8A04BAF3 /* libPods-DagMobile.a */; };
 		912CD77F207766E8E81B0B4E /* libPods-DagMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C39F9F90BBF9B96072F6E399 /* libPods-DagMobileTests.a */; };
@@ -287,6 +288,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		8758D4252242E00D00C24C6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8758D3FB2242E00D00C24C6F /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGestureHandler;
+		};
 		87E1CDB722429C2900D810B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -364,6 +372,7 @@
 		74A10372D6360FCC8A04BAF3 /* libPods-DagMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DagMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8758D3FB2242E00D00C24C6F /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		87E1CDBF22429F0400D810B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0E75EB0A04C40DF849C6E7E /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		AC66F71B9BB73F08985C1FE4 /* Pods-DagMobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DagMobile-tvOS.release.xcconfig"; path = "Target Support Files/Pods-DagMobile-tvOS/Pods-DagMobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -391,6 +400,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8758D4272242E01700C24C6F /* libRNGestureHandler.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -590,6 +600,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				8758D3FB2242E00D00C24C6F /* RNGestureHandler.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -639,6 +650,14 @@
 				00E356EE1AD99517003FC87E /* DagMobileTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* DagMobile-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* DagMobile-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8758D3FC2242E00D00C24C6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8758D4262242E00D00C24C6F /* libRNGestureHandler.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -849,6 +868,10 @@
 				{
 					ProductGroup = 87E1CDFF2242A18600D810B1 /* Products */;
 					ProjectRef = 12FCAA3EC6EA4A91A35C011B /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = 8758D3FC2242E00D00C24C6F /* Products */;
+					ProjectRef = 8758D3FB2242E00D00C24C6F /* RNGestureHandler.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1084,6 +1107,13 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8758D4262242E00D00C24C6F /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = 8758D4252242E00D00C24C6F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		87E1CDB822429C2900D810B1 /* libjsi.a */ = {
