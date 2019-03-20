@@ -7,6 +7,8 @@ target 'DagMobile' do
 
   # Pods for DagMobile
   pod 'Firebase/Core', '~> 5.15.0'
+  pod 'Firebase/Auth', '~> 5.15.0'
+  pod 'Firebase/Database', '~> 5.15.0'
 
   target 'DagMobileTests' do
     inherit! :search_paths
